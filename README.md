@@ -7,9 +7,9 @@ In this repository you can find:
 
     - The codes and plots for the data analysis  
 
-To clone everything:
 
-'''
+To clone everything:
+'
 git clone https://github.com/ciavanick/ArtificialPancreas.git
-'''
+'
 
