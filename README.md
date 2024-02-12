@@ -9,7 +9,6 @@ In this repository you can find:
 
 
 To clone everything:
-'
-git clone https://github.com/ciavanick/ArtificialPancreas.git
-'
+
+'git clone https://github.com/ciavanick/ArtificialPancreas.git'
 
