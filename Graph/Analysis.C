@@ -35,7 +35,7 @@ void Analysis(TString path = "Insert_tap_2.csv")
     g1->SetTitle("Insert salt from 3.2V;time (s);Voltage (V)");
     g1->SetMarkerStyle(8);
     g1->SetMarkerColor(kBlack);
-    g1->SetMarkerSize(.5);
+    g1->SetMarkerSize(.7);
     g1->SetLineStyle(1);
     g1->SetLineWidth(1.);
 
@@ -61,7 +61,7 @@ void Analysis(TString path = "Insert_tap_2.csv")
     g2->SetTitle("Insert tap 1;time (s);Voltage (V)");
     g2->SetMarkerStyle(8);
     g2->SetMarkerColor(kBlack);
-    g2->SetMarkerSize(.5);
+    g2->SetMarkerSize(.7);
     g2->SetLineStyle(1);
     g2->SetLineWidth(1.);
 
@@ -93,7 +93,7 @@ void Analysis(TString path = "Insert_tap_2.csv")
     g3->SetTitle("Tap water insertion, V_{low} = 2.1 V; time (s); Voltage (V)");
     g3->SetMarkerStyle(8);
     g3->SetMarkerColor(kBlack);
-    g3->SetMarkerSize(.5);
+    g3->SetMarkerSize(.7);
     g3->SetLineStyle(1);
     g3->SetLineWidth(1.);
 
@@ -126,7 +126,7 @@ void Analysis(TString path = "Insert_tap_2.csv")
     g4->SetTitle("Insert salt 3V;time (s);Voltage (V)");
     g4->SetMarkerStyle(8);
     g4->SetMarkerColor(kBlack);
-    g4->SetMarkerSize(.5);
+    g4->SetMarkerSize(.7);
     g4->SetLineStyle(1);
     g4->SetLineWidth(1.);
 
@@ -151,7 +151,7 @@ void Analysis(TString path = "Insert_tap_2.csv")
     g5->SetTitle("Insert Salt 2.86V;time (s);Voltage (V)");
     g5->SetMarkerStyle(8);
     g5->SetMarkerColor(kBlack);
-    g5->SetMarkerSize(.5);
+    g5->SetMarkerSize(.7);
     g5->SetLineStyle(1);
     g5->SetLineWidth(1.);
 
