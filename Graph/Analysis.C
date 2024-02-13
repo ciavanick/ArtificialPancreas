@@ -1,6 +1,6 @@
 // File used to analyze the data of Artificial pancreas
 
-void Analysis(TString path = "Insert_tap_2.csv")
+void Analysis()
 {
 
     gStyle->SetOptFit(0010);
