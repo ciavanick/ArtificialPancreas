@@ -14,7 +14,7 @@ To clone everything:
 
 ## LabView code
 In the LabView folder it can be found the code related to the artificial pancreas simulation.
-The code is developed to work with Arduino UNO (or compatible microcontroller boards.
+The code is developed to work with Arduino UNO (or compatible microcontroller boards).
 
 ## Plots and data analysis
 In the Graph folder it can be found the codes (that work with the framework ROOT CERN) used for the data analysis, in particular there are two important scripts: `dataset.cpp` and `Analysis.C`.
