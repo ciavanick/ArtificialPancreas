@@ -32,20 +32,28 @@ void Analysis()
     g1->Fit("f_exp1", "S", "", 25, 50);
 
     // Graph cosmetic
-    g1->SetTitle("Insert salt from 3.2V;time (s);Voltage (V)");
+    g1->SetTitle("Salt water Insertion, V_{HIGH} = 3.1 V;time (s);Voltage (V)");
     g1->SetMarkerStyle(8);
     g1->SetMarkerColor(kBlack);
     g1->SetMarkerSize(.4);
     g1->SetLineStyle(1);
     g1->SetLineWidth(1.);
 
+    //Threshold line
+    TLine *line1 = new TLine(0.,3.1,42.2,3.1);
+    line1->SetLineColor(kRed + 2);
+    line1->SetLineStyle(2);
+
     // Legend
     TLegend *leg1 = new TLegend(0.6,0.15,0.85,0.25);
     leg1->AddEntry(g1, "Experimental Data");
     leg1->AddEntry(f_exp1, "Fit V = Ae^{-t/T}+V_{0}");
+    leg1->AddEntry(line1, "V_{HIGH} = 3.1V", "l");
+
 
     // Draw and save
     g1->Draw();
+    line1->Draw("SAME");
     leg1->Draw("SAME");
     c1->Print("FinalPlots/Insert_salt_from_3_2V.png");
 
@@ -90,20 +98,27 @@ void Analysis()
     g3->Fit("f_exp3", "S", "", 113, 126);
 
     // Graph cosmetic
-    g3->SetTitle("Tap water insertion, V_{low} = 2.1 V; time (s); Voltage (V)");
+    g3->SetTitle("Tap water insertion, V_{LOW} = 2.1 V; time (s); Voltage (V)");
     g3->SetMarkerStyle(8);
     g3->SetMarkerColor(kBlack);
     g3->SetMarkerSize(.4);
     g3->SetLineStyle(1);
     g3->SetLineWidth(1.);
 
+    //Threshold line
+    TLine *line3 = new TLine(72.,2.1,130.,2.1);
+    line3->SetLineColor(kRed + 2);
+    line3->SetLineStyle(2);
+
     // Legend
-    TLegend *leg3 = new TLegend(0.105,0.75,0.33,0.9);
+    TLegend *leg3 = new TLegend(0.105,0.75,0.337,0.9);
     leg3->AddEntry(g3, "Experimental Data");
     leg3->AddEntry(f_exp3, "Fit V = Ae^{-t/T}+V_{0}");
+    leg3->AddEntry(line3, "V_{LOW} = 2.1V", "l");
 
     // Draw and save
     g3->Draw();
+    line3->Draw("SAME");
     leg3->Draw("SAME");
     c3->Print("FinalPlots/Insert_tap_2.png");
     //----------------------------------------------------------
@@ -123,21 +138,28 @@ void Analysis()
     g4->Fit("f_exp4", "S", "", 40, 80);
 
     // Graph cosmetic
-    g4->SetTitle("Insert salt 3V;time (s);Voltage (V)");
+    g4->SetTitle("Salt water insertion, V_{HIGH} = 3 V;time (s);Voltage (V)");
     g4->SetMarkerStyle(8);
     g4->SetMarkerColor(kBlack);
     g4->SetMarkerSize(.4);
     g4->SetLineStyle(1);
     g4->SetLineWidth(1.);
 
+    //Threshold line
+    TLine *line4 = new TLine(0.,3.,90.,3.);
+    line4->SetLineColor(kRed + 2);
+    line4->SetLineStyle(2);
+
     // Legend
-    TLegend *leg4 = new TLegend(0.125,0.13,0.4,0.205);
+    TLegend *leg4 = new TLegend(0.125,0.13,0.4,0.23);
     leg4->AddEntry(g4, "Experimental Data");
     leg4->AddEntry(f_exp4, "Fit V = Ae^{-t/T}+V_{0}");
+    leg4->AddEntry(line4, "V_{HIGH} = 3V","l");
 
 
     // Draw and save
     g4->Draw();
+    line4->Draw("SAME");
     leg4->Draw("SAME");
     c4->Print("FinalPlots/Insert_salt_3V.png");
     //----------------------------------------------------------
@@ -148,19 +170,26 @@ void Analysis()
     TGraph *g5 = (TGraph *)f->Get("Graph;5");
 
     // Graph cosmetic
-    g5->SetTitle("Insert Salt 2.86V;time (s);Voltage (V)");
+    g5->SetTitle("Salt water insertion, V_{HIGH} = 2.86 V;time (s);Voltage (V)");
     g5->SetMarkerStyle(8);
     g5->SetMarkerColor(kBlack);
     g5->SetMarkerSize(.4);
     g5->SetLineStyle(1);
     g5->SetLineWidth(1.);
 
+    //Threshold line
+    TLine *line5 = new TLine(0.,2.86,70.,2.86);
+    line5->SetLineColor(kRed + 2);
+    line5->SetLineStyle(2);
+
     // Legend
     TLegend *leg5 = new TLegend(0.6,0.8,0.875,0.875);
     leg5->AddEntry(g5, "Experimental Data");
+    leg5->AddEntry(line5, "V_{HIGH} = 2.86V","l");
 
     // Draw and save
     g5->Draw();
+    line5->Draw("SAME");
     leg5->Draw("SAME");
     c5->Print("FinalPlots/Insert_salt_2_86V.png");
     //-----------------------------------------------------------
