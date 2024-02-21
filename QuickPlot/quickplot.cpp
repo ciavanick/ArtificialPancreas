@@ -66,7 +66,7 @@ void quickplot(Double_t x_min, Double_t x_max, Double_t thresholddown, Double_t 
     gStyle->SetStatH(0.05);
 
     // Creating the graph
-    TGraph *g1 = new TGraph(path, "%lg %lg", ",");
+    TGraph *g1 = new TGraph(path, "%lg %lg", "\t");
 
     // Extracting the path
     Int_t dot = path.First('.');
