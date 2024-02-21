@@ -56,6 +56,7 @@ void Analysis()
     line1->Draw("SAME");
     leg1->Draw("SAME");
     c1->Print("FinalPlots/Insert_salt_from_3_2V.png");
+    c1->Print("FinalPlots/Insert_salt_from_3_2V.pdf");
 
     //----------------------------------------------------------
 
@@ -81,6 +82,7 @@ void Analysis()
     g2->Draw();
     leg2->Draw("SAME");
     c2->Print("FinalPlots/Insert_tap_1.png");
+    c2->Print("FinalPlots/Insert_tap_1.pdf");
 
     //----------------------------------------------------------
     // Insert Tap 2
@@ -111,9 +113,9 @@ void Analysis()
     line3->SetLineStyle(2);
 
     // Legend
-    TLegend *leg3 = new TLegend(0.105,0.75,0.337,0.9);
-    leg3->AddEntry(g3, "Experimental Data");
-    leg3->AddEntry(f_exp3, "Fit V = Ae^{-t/T}+V_{0}");
+    TLegend *leg3 = new TLegend(0.720,0.6,0.9,0.75);
+    leg3->AddEntry(g3, "Exp. Data");
+    leg3->AddEntry(f_exp3, "Fit V=Ae^{-t/T}+V_{0}");
     leg3->AddEntry(line3, "V_{LOW} = 2.1V", "l");
 
     // Draw and save
@@ -121,6 +123,7 @@ void Analysis()
     line3->Draw("SAME");
     leg3->Draw("SAME");
     c3->Print("FinalPlots/Insert_tap_2.png");
+    c3->Print("FinalPlots/Insert_tap_2.pdf");
     //----------------------------------------------------------
 
     // Insert Salt 3V
@@ -162,6 +165,7 @@ void Analysis()
     line4->Draw("SAME");
     leg4->Draw("SAME");
     c4->Print("FinalPlots/Insert_salt_3V.png");
+    c4->Print("FinalPlots/Insert_salt_3V.pdf");
     //----------------------------------------------------------
     // Insert Salt 2.86V
     TCanvas *c5 = new TCanvas("c5", "c5");
@@ -192,6 +196,7 @@ void Analysis()
     line5->Draw("SAME");
     leg5->Draw("SAME");
     c5->Print("FinalPlots/Insert_salt_2_86V.png");
+    c5->Print("FinalPlots/Insert_salt_2_86V.pdf");
     //-----------------------------------------------------------
 
 }
