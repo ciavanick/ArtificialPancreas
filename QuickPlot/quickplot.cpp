@@ -56,7 +56,7 @@ void quickplot(Double_t thresholddown, Double_t thresholdup, TString path)
     g1->Write();
     f->Close();
 }
-void test(Double_t x_min, Double_t x_max, Double_t thresholddown, Double_t thresholdup, TString path)
+void quickplot(Double_t x_min, Double_t x_max, Double_t thresholddown, Double_t thresholdup, TString path)
 {
     // Setting gStyle legend
     gStyle->SetOptFit(0010);
