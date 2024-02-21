@@ -50,4 +50,8 @@ void quickplot(Double_t thresholddown, Double_t thresholdup, TString path){
     leg1->Draw("SAME");
     c1->Print("Result/"+ path + ".png");
     c1->Print("Result/"+ path + ".pdf");
+
+    TFile *f = new TFile("Result/"+ path +".root", "recreate");
+    g1->Write();
+    f->Close();
 }
