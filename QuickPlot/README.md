@@ -13,4 +13,6 @@ You can run the macro using the commands:
     `root -l 'quickplot.cpp(t_start,t_stop,lower_threshold,upper_threshold,"csv_path_name")'`.
 
 Note that with the flag -b root will operates in background so it wont open the shell and the interface while without it it will open the shell and the interface.
+
+
 After that you will find in the Result folder the plots
