@@ -82,4 +82,5 @@ void Allplots(){
     line5->Draw("SAME");
     leg->Draw("Same");
     c1->Print("AllPlots/Insert_salt.png");
+    c1->Print("AllPlots/Insert_salt.pdf");
 }
