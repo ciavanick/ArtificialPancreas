@@ -1,6 +1,6 @@
 void quickplot(Double_t thresholddown, Double_t thresholdup, TString path){
     //Creating the graph
-    TGraph *g1 = new TGraph(path, "%lg %lg", ",");
+    TGraph *g1 = new TGraph(path, "%lg %lg", "\t");
     
     //Extracting the path
     Int_t dot = path.First('.');
